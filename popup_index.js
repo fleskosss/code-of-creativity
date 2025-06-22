@@ -17,7 +17,13 @@ openModalButton.addEventListener('click', () => {
 const buttons = document.getElementsByTagName('button');
 
 for (let button of buttons) {
-    button.addEventListener('click', () => {
-        window.location.replace('https://m1x7urk44.github.io/code-of-creativity/ohibka.html')
-    })
+    if (button.classList.contains('error-link')) {
+        button.addEventListener('click', () => {
+            window.location.replace('https://fleskosss.github.io/code-of-creativity/ohibka.html');
+        })
+    }
 }
+
+document.getElementById('Logo').addEventListener('click', () => {
+    window.location.replace('https://fleskosss.github.io/code-of-creativity/');
+})

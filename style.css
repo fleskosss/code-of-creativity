@@ -158,6 +158,7 @@ a{
     display: flex;
     gap: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 .heading{
@@ -168,6 +169,7 @@ a{
     font-family: 'Kanit Cyrillic'; 
     font-size: 40px;
     color: white;
+    text-align: left;
 }
 .subtitle2{
     font-family: 'Kanit Cyrillic'; 
@@ -184,6 +186,7 @@ a{
     font-size: 24px;
     color: white;
     font-weight: 300;
+    text-align: left;
 }
 .text2{
     font-family: "Inter";
@@ -259,6 +262,20 @@ a{
     border-radius: 15px;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .violet {
+        font-size: 18px;
+        width: 160px;
+        height: 50px;
+    }
+
+    .green {
+        font-size: 18px;
+        width: 300px;
+    }
+}
+
 /* Эффект */
 .violet:hover {
     background-color: #8a1dff; 
@@ -276,6 +293,12 @@ a{
 }
 .block2{
     margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+    .head1 {
+        margin-top: 145px;
+    }
 }
 
 .glavFLex{
@@ -417,6 +440,12 @@ a{
     flex: 1 0 25%;
     box-sizing: border-box;
 }
+.otziv1 img {
+    min-width: 60px;
+    max-width: 60px;
+    aspect-ratio: 1;
+
+}
 .otziv{
     display: flex;
     gap: 20px;
@@ -553,6 +582,7 @@ a{
     width: 325px;
     height: 120px;
     justify-content: center;
+    box-sizing: border-box;
 }
 .flextext{
     margin-top: 60px;
@@ -574,6 +604,7 @@ a{
     height: 370px;
     padding: 20px;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .events-cards {
@@ -594,7 +625,7 @@ a{
     }
 
     .block7 .subtitle {
-        text-align: center;
+        text-align: left;
     }
 }
 
