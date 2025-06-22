@@ -223,6 +223,10 @@ a{
   font-weight: 400;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* кнопки */
 .gren{
     width: 325px;
