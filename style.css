@@ -779,6 +779,7 @@ input.text{
     border: none;
     padding: 15px;
     width: 100%;
+    color: #000;
 }
 .plahka form textarea {
     min-height: 120px; 
