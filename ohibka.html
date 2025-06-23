@@ -10,20 +10,96 @@
 </head>
 <body>
     <div class="container">
+        <header style="margin-top: 40px;">
+            <nav class="header" id="Header">
+                <div class="Logotype" id="Logo">
+                    <img src="IMG GLAVNAI/логотип.png">
+                    <p class="TextLogo">Code of <br> Creativity</p>
+                </div>
+                
+                <!-- Бургер-иконка -->
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+                <!-- Основное меню -->
+                <ul class="list" id="navList">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="afiha.html">Афиша</a></li>
+                    <li><a href="#">Курсы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="kontakti.html">Контакты</a></li>
+                    <li><button id="accountButton"><img src="IMG GLAVNAI/profile-white-icon.svg" class="account-icon"></button></li>
+                </ul>
+            </nav>
+        </header>
+
         <div class="square"> 
             <div class="flex">
-                <p class="text404">404</p>
-                <img src="ohibka/foto.png" style="margin-top: 40px;">
+                <img src="ohibka/foto.png">
                 <p class="text">Что-то пошло не так...</p>
-                <p class="textmini">Попробуйте перезапустить сайт или вернутся на главную</p>
+                <p class="textmini">Попробуйте перезапустить<br>сайт или вернутся на главную</p>
                 <button class="green">Вернуться на главную</button>
             </div>
         </div>
-   </div>
+
+    </div>
+    <footer>
+        <div class="line-3"></div>
+        <div class="footer">
+            <div class="footer-container">
+                <div>
+                    <a href="/">
+                        <div class="footer-logo">
+                            <img src="IMG GLAVNAI/логотип.png">
+                            <p class="code">Code of <br> Creativity</p>
+                        </div>
+                    </a>
+                    <div class="ICONS">
+                        <img src="IMG GLAVNAI/Инста.png">
+                        <img src="IMG GLAVNAI/Твит.png">
+                        <img src="IMG GLAVNAI/Телеграмм.png">
+                        <img src="IMG GLAVNAI/Ютуб.png">
+                    </div>
+                </div>
+                <div class="perexod">
+                    <p class="text"><a href="#">О проекте</a></p>
+                    <p class="text"><a href="/afiha.html">Афиша</a></p>
+                    <p class="text"><a href="#">Курсы</a></p>
+                    <p class="text"><a href="#">Новости</a></p>
+                    <p class="text"><a href="/kontakti.html">Контакты</a></p>
+                </div>
+                <div id="filials">
+                    <p class="text">ФИЛИАЛЫ</p>
+                    <div class="flexfooter1">
+                        <img src="IMG GLAVNAI/метка.png">
+                        <p class="text">м. Достоевская <br> Графский переулок, д2к3 <br> 5 этаж, офис 455</p>
+                    </div>
+                    <div class="flexfooter2">
+                        <img src="IMG GLAVNAI/метка.png">
+                        <p class="text">м. Невский проспект <br> Малая Садовая улица, 1/25</p>
+                    </div>
+                    <div class="flexfooter3">
+                        <img src="IMG GLAVNAI/теле.png">
+                        <p class="text">+7 999 999 99 99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-text">
+                <div class="footerbooton">
+                    <p class="minitext">Политика конфиденциальности</p>
+                    <p class="minitext">ИП Дудкин Иван Иванович</p>
+                    <p class="minitext">© Креативные Практики 2025</p>
+                </div>
+            </div>
+    <footer>
+   <script src="popup_index.js"></script>
 </body>
 </html>
 <script>
     document.getElementsByClassName('green')[0].addEventListener('click', () => {
-        window.location.replace('https://fleskosss.github.io/code-of-creativity/');
-    }) 
+        window.location.replace('/');
+    })
 </script>
