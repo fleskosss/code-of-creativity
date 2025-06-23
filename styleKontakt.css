@@ -170,6 +170,30 @@ a{
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .Logotype {
+        gap: 10px;    
+    }
+
+    .Logotype img {
+        width: 60px;
+    }
+
+    .TextLogo {
+        font-size: 16px;
+    }
+}
+
+.heading {
+    margin-top: 180px;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-top: 80px;
+    }
+}
+
 
 /* текст */
 
@@ -251,6 +275,12 @@ a{
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .buttonBlack {
+        font-size: 18px;
+    }
+}
+
 /* блок1 */
 
 .flexGLskool{
@@ -270,6 +300,16 @@ a{
     align-items: center;
     justify-content: space-between;
     margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+    .block1 {
+        margin-top: 40px;
+    }
+}
+
+.block1 .block1-inner {
+    width: 100%;
 }
 
 #interactiveMap iframe {
@@ -457,4 +497,47 @@ a{
 
 .footer p {
     text-align: left;
+}
+
+.ICONS img {
+    width: 35px;
+}
+
+.footer .footer-logo {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-logo img {
+    width: 80px;
+    height: 58px;
+}
+
+.footer .footer-logo .code {
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-logo {
+        gap: 10px;
+    }
+
+    .footer .footer-logo img {
+        width: 60px;
+        height: 42px;
+    }
+
+    .footer .footer-logo .code {
+        font-size: 16px;
+    }
+
+    .ICONS {
+        gap: 20px;
+    }
+
+    .ICONS img {
+        width: 35px;
+    }
 }

@@ -66,8 +66,9 @@ ul{
     width: 100%;
     height: 3px;
     border-radius: 20px;
-    background: #fff;
+    background: #000;
     z-index: 999;
+    margin-right: 10px;
 }
 
 @media (max-width: 1280px) {
@@ -159,6 +160,21 @@ a{
     gap: 20px;
     align-items: center;
     cursor: pointer;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .Logotype {
+        gap: 10px;    
+    }
+
+    .Logotype img {
+        width: 60px;
+    }
+
+    .TextLogo {
+        font-size: 16px;
+    }
 }
 
 .heading{
@@ -261,6 +277,7 @@ a{
     color: white;
     border-radius: 15px;
     border: none;
+    margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -268,6 +285,7 @@ a{
         font-size: 18px;
         width: 160px;
         height: 50px;
+        margin-top: 20px;
     }
 
     .green {
@@ -289,22 +307,43 @@ a{
 }
 
 .head1{
-    margin-top: 290px;
+    margin-top: 150px;
 }
 .block2{
     margin-top: 120px;
 }
+.block2 .text {
+    margin-top: 40px;
+}
+
+.text {
+    line-height: 120%;
+}
+
+@media (max-width: 768px) {
+    .block4 {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
     .head1 {
-        margin-top: 145px;
+        margin-top: 80px;
+    }
+
+    .block2 .text {
+        margin-top: 20px;
+    }
+
+    .block2 {
+        margin-top: 40px;
     }
 }
 
 .glavFLex{
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 40px;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -344,6 +383,16 @@ a{
     }
     .block6 {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .block3 .glavFLex {
+        margin-top: 20px;
+    }
+
+    .block3 {
+        margin-top: 40px;
     }
 }
 
@@ -429,8 +478,19 @@ a{
     padding-left: 15px;
 }
 .block5{
-    margin: 120px 0;
+    margin-top: 120px;
 }
+
+@media (max-width: 768px) {
+    .block5 {
+        margin-top: 40px;
+    } 
+
+    .block5 .otziv {
+        margin-top: 20px;
+    } 
+}
+
 .otziv1{
     border-radius: 15px;
     border: 1px solid #6D0FCF;
@@ -449,7 +509,7 @@ a{
 .otziv{
     display: flex;
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 40px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -459,14 +519,12 @@ a{
     margin-top: 20px;
     justify-content: space-between;
 }
-.block6{
-    margin-top: 120px;
-}
+
 .flexblock6{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 
 @media (max-width: 1280px) {
@@ -537,8 +595,20 @@ a{
 }
 
 .block6{
-    margin: 120px 0;
+    margin-top: 120px;
 }
+
+@media (max-width: 768px) {
+    .block6 {
+        margin-top: 40px;
+    }
+
+    .block6 .flexblock6 {
+        margin: 20px 0;
+    }
+}
+
+
 .gren{
     width: 325px;
     height: 60px;
@@ -548,7 +618,16 @@ a{
     color: rgb(0, 0, 0);
     border-radius: 15px;
     border: none;
+    width: 100%;
+    margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+    .gren {
+        margin-top: 20px;
+    }
+}
+
 /* Эффект */
 .gren:hover {
     background-color: #7ddd00; 
@@ -563,13 +642,23 @@ a{
 
 
 .block7{
-    margin: 120px 0;
+    margin-top: 120px;
 }
 .flexblock7{
     display: flex;
     gap: 60px;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .block7 {
+        margin-top: 40px;
+    }
+
+    .block7 .flexblock7 {
+        margin-top: 20px;
+    }
 }
 
 .textfl{
@@ -812,19 +901,25 @@ input.text{
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .fiolGrand {
+        font-size: 18px;
+    }
+}
   /* width: 325px;
   height: 418px; */
 
 .block8 {
   width: 100%;
-  margin: 40px 0;
+  margin: 80px 0;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .block8 .subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -988,3 +1083,53 @@ input.text{
 .footer p {
     text-align: left;
 }
+
+.ICONS {
+    justify-content: center;
+    gap: 20px
+}
+
+.ICONS img {
+    width: 35px;
+}
+
+.footer .footer-logo {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-logo img {
+    width: 80px;
+    height: 58px;
+}
+
+.footer .footer-logo .code {
+    font-size: 22px;
+}
+
+
+@media (max-width: 768px) {
+    .footer .footer-logo {
+        gap: 10px;
+    }
+
+    .footer .footer-logo img {
+        width: 60px;
+        height: 42px;
+    }
+
+    .footer .footer-logo .code {
+        font-size: 16px;
+    }
+
+    .ICONS {
+        gap: 20px;
+    }
+
+    .ICONS img {
+        width: 35px;
+    }
+}
+

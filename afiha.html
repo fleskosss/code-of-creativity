@@ -36,14 +36,14 @@
                     </nav>
                 </header>
         <div id="searchField">
-            <p class="subtitle" style="margin-top: 200px;">Афиша соревнований</p>
+            <p class="subtitle">Афиша соревнований</p>
             <form method="get">
                 <input class="text" name="query" placeholder="Поиск...">
-                <button type="button" class="gren error-link">Искать</button>
+                <button type="button" id="searchButton" class="gren error-link">Искать</button>
             </form>
         </div>
         <div id="futureEvents">
-            <p class="subtitle" style="margin-top: 120px;">Будущие соревнования</p>
+            <p class="subtitle">Будущие соревнования</p>
             
             <div class="groupBig">
 
@@ -109,12 +109,12 @@
                     </div>
                 </div>
             </div>
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: 80px;">
+            <div class="show-more-btn">
                 <button class="gren error-link">ПОКАЗАТЬ ЕЩЁ</button>
             </div>
         </div>
         <div class="block6">
-            <p class="subtitle" style="margin-top: 120px;">Участвуй в соревнованиях и выигрывай призы!</p>
+            <p class="subtitle">Участвуй в соревнованиях и выигрывай призы!</p>
                 <div class="flexblock6">
                     <div>
                         <p class="text">Конкурс на лучшие призы среди IT-энтузиастов!
@@ -125,7 +125,7 @@
                         <br> 3 место - Планшет со стилусом для творчества и работы в IT-сфере. 
                         <br>
                         <br> Все призеры получат эксклюзивную возможность работать в ведущих IT-компаниях.  4 место - 50,000 рублей, которые помогут реализовать ваши мечты.</p>
-                        <button class="gren error-link" style="margin-top: 120px;">НАЧАТЬ</button>
+                        <button class="gren error-link">НАЧАТЬ</button>
                     </div>
                     <img src="IMG GLAVNAI/выиграш.png" style="border-radius: 15px;">
                 </div>
@@ -150,7 +150,7 @@
                         <textarea class="text" placeholder="Ваш вопрос"></textarea>
                     </div>
                     <div style="display: flex; margin-top: 20px; align-items: center; gap: 10px;">
-                        <img src="IMG GLAVNAI/pyp.png">
+                        <input type="checkbox">
                         <p class="minitext">я согласен на политику конфиденциальности</p>
                     </div>
                     <button class="fiolGrand" style="margin-top: 30px;">ОТПРАВИТЬ</button>
@@ -165,7 +165,7 @@
             <div class="footer">
                 <div class="container">
                     <div>
-                        <div style="display: flex; gap: 40px;">
+                        <div class="footer-logo">
                             <img src="IMG GLAVNAI/логотип.png">
                             <p class="code">Code of <br> Creativity</p>
                         </div>
