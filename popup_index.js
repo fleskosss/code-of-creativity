@@ -9,8 +9,20 @@ openModalButton.addEventListener('click', () => {
             document.getElementById('navList').style.animation = '';
         }, 300);
         document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+
+        // Переключить лого
+        document.getElementById('Logo').getElementsByTagName('img')[0].src = "IMG GLAVNAI/logo-active.svg";
+
+        // Переключить меню profile-icon
+        document.getElementById('accountButton').getElementsByTagName('img')[0].src = "IMG GLAVNAI/profile-black-icon.svg";
     } else {
         document.getElementsByTagName('body')[0].style.overflow = '';
+
+        // Переключить лого
+        document.getElementById('Logo').getElementsByTagName('img')[0].src = "IMG GLAVNAI/логотип.png";
+
+        // Переключить меню profile-icon
+        document.getElementById('accountButton').getElementsByTagName('img')[0].src = "IMG GLAVNAI/profile-white-icon.svg";
     }
 })
 

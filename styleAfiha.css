@@ -136,8 +136,8 @@ a{
         background: #000;
     }
 
-    .header .account-icon {
-        display: none;
+    .header.active #Logo p {
+        color: #000;
     }
 
     .header #burgerMenu {
@@ -177,6 +177,7 @@ a{
     gap: 20px;
     align-items: center;
     cursor: pointer;
+    z-index: 999;
 }
 
 @media (max-width: 768px) {
@@ -678,7 +679,7 @@ button {
 }
 
 .plahka input[type="checkbox"] {
-    width: 30px;
+    width: 40px;
 }
 
 @media (max-width: 768px) {
@@ -740,3 +741,24 @@ button {
     }
 }
 
+
+
+@media (min-width: 1280px) {
+    #navList {
+        width: 100%;
+        justify-content: start;
+    }
+
+    #navList li:first-child {
+        margin-left: auto;
+    }
+
+    #navList li:nth-last-child(2) {
+        margin-right: auto;
+    }
+}
+
+#accountButton {
+    border: none;
+    background: transparent;
+}

@@ -31,8 +31,8 @@
                             <li><a href="#">Курсы</a></li>
                             <li><a href="#">Новости</a></li>
                             <li><a href="kontakti.html">Контакты</a></li>
+                            <li><button id="accountButton"><img src="IMG GLAVNAI/profile-white-icon.svg" class="account-icon"></button></li>
                         </ul>
-                        <img src="IMG GLAVNAI/Аккаунт.png" class="account-icon">
                     </nav>
                 </header>
 
@@ -186,8 +186,8 @@
             |<div class="block7">
                 <p class="subtitle">Проходящие соревнования</p>
                 <div class="flexblock7">
-                    <p class="subtitle3" >22.08 2025</p>
-                    <button class="violet error-link">Сегодня</button>
+                    <p class="subtitle3" style="text-wrap:nowrap;">22.08 2025</p>
+                    <button class="violet error-link" style="margin-top: 0;">Сегодня</button>
                 </div>
                 <div class="events-cards">
                     <div class="card-item">
@@ -309,7 +309,7 @@
             <div class="plahka">
                 <div>
                     <p class="xz">Нужна помощь? <br> Свяжитесь с нами</p>
-                    <p class="text" style="margin-top: 90px;">Вы можете написать нам по любому интересующему вас вопросу: <br> • сотрудничество; <br> • консультация; <br> • обучение <br> <br></vr> Или просто желание обсудить детали – мы с радостью рассмотрим ваше обращение и обязательно вам ответим в ближайшее время. <br> <br> <b>Ждем Вашего звонка!</b></p>
+                    <p class="text">Вы можете написать нам по любому интересующему вас вопросу: <br> • сотрудничество; <br> • консультация; <br> • обучение <br> <br></vr> Или просто желание обсудить детали – мы с радостью рассмотрим ваше обращение и обязательно вам ответим в ближайшее время. <br> <br> <b>Ждем Вашего звонка!</b></p>
                 </div>
                 <form action="/submit-form" method="POST">
                     <div class="form-group">
@@ -324,7 +324,7 @@
                         <textarea class="text" placeholder="Ваш вопрос"></textarea>
                     </div>
                     <div style="display: flex; margin-top: 20px; align-items: center; gap: 10px;">
-                        <img src="IMG GLAVNAI/pyp.png">
+                        <input type="checkbox">
                         <p class="minitext">я согласен на политику конфиденциальности</p>
                     </div>
                     <button class="fiolGrand" style="margin-top: 30px;">ОТПРАВИТЬ</button>
@@ -338,10 +338,12 @@
             <div class="footer">
                 <div class="container">
                     <div>
-                        <div class="footer-logo">
-                            <img src="IMG GLAVNAI/логотип.png">
-                            <p class="code">Code of <br> Creativity</p>
-                        </div>
+                        <a href="/">
+                            <div class="footer-logo">
+                                <img src="IMG GLAVNAI/логотип.png">
+                                <p class="code">Code of <br> Creativity</p>
+                            </div>
+                        </a>
                         <div class="ICONS">
                             <img src="IMG GLAVNAI/Инста.png">
                             <img src="IMG GLAVNAI/Твит.png">
@@ -350,11 +352,11 @@
                         </div>
                     </div>
                     <div class="perexod">
-                        <p class="text">О проекте</p>
-                        <p class="text">Афиша</p>
-                        <p class="text">Курсы</p>
-                        <p class="text">Новости</p>
-                        <p class="text">Контакты</p>
+                        <p class="text"><a href="#">О проекте</a></p>
+                        <p class="text"><a href="/afiha.html">Афиша</a></p>
+                        <p class="text"><a href="#">Курсы</a></p>
+                        <p class="text"><a href="#">Новости</a></p>
+                        <p class="text"><a href="/kontakti.html">Контакты</a></p>
                     </div>
                     <div id="filials">
                         <p class="text">ФИЛИАЛЫ</p>
