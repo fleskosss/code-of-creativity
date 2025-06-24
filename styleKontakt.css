@@ -318,7 +318,7 @@ a{
 }
 
 #interactiveMap iframe {
-    max-width: 100%;
+    max-width: 700px;
     border: none; 
     border-radius: 20px;
 }
@@ -331,6 +331,7 @@ a{
 
     #interactiveMap iframe {
         max-height: 400px;
+        max-width: 100%;
     }
 }
 
@@ -400,6 +401,16 @@ a{
 
     .block2 .glflex .form-desc {
         gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block2 {
+        margin-top: 40px;
+    }
+
+    .block2 .glflex {
+        margin-bottom: -80px;
     }
 }
 

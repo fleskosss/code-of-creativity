@@ -311,7 +311,7 @@
                     <p class="xz">Нужна помощь? <br> Свяжитесь с нами</p>
                     <p class="text">Вы можете написать нам по любому интересующему вас вопросу: <br> • сотрудничество; <br> • консультация; <br> • обучение <br> <br></vr> Или просто желание обсудить детали – мы с радостью рассмотрим ваше обращение и обязательно вам ответим в ближайшее время. <br> <br> <b>Ждем Вашего звонка!</b></p>
                 </div>
-                <form action="/submit-form" method="POST">
+                <form method="POST">
                     <div class="form-group">
                         <input class="text" placeholder="Ваше ФИО">
                     </div>
@@ -327,7 +327,7 @@
                         <input type="checkbox">
                         <p class="minitext">я согласен на политику конфиденциальности</p>
                     </div>
-                    <button class="fiolGrand" style="margin-top: 30px;">ОТПРАВИТЬ</button>
+                    <button type="button" class="fiolGrand" id="fiolGrand" style="margin-top: 30px;">ОТПРАВИТЬ</button>
                 <form>
             </div>
         </div>
@@ -386,4 +386,8 @@
 <script src="popup_index.js"></script>
 <script src="slider.js"></script>
 </body>
-
+<script>
+    document.getElementById('fiolGrand').addEventListener('click', () => {
+        window.location.reload();
+    })
+</script>

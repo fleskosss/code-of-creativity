@@ -215,6 +215,11 @@ a{
     font-size: 36px;
     color: white;
 }
+
+.plahka .xz {
+    margin-bottom: 20px;
+}
+
 .xz2{
     font-family: "Inter";
     font-size: 96px;
@@ -262,6 +267,7 @@ button {
     border-radius: 15px;
     border: none;
     margin-top: 20px;
+    width: 100%;
 }
 .fiolGrand{
     width: 200px;
@@ -372,8 +378,8 @@ button {
 
 .group-item {
     flex: 1 0 25%;
-    min-height: 455px;
-    max-height: 455px;
+    /* min-height: 455px;
+    max-height: 455px; */
     min-width: 300px;
     max-width: 440px;
     background-color: #ffffff;
@@ -510,6 +516,7 @@ button {
 @media (max-width: 1280px) {
     .plahka-block {
         padding: 20px;
+        margin-top: 40px;
     }
 
     .plahka {        
@@ -550,7 +557,7 @@ button {
     }
     #searchField form .gren {
         width: 100px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .gren {
@@ -562,6 +569,7 @@ button {
 
 #searchButton {
     margin-top: 0;
+    max-width: 200px;
 }
 
 .subtitle {

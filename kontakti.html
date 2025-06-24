@@ -103,7 +103,7 @@
                 <p class="text">Вы можете написать нам по любому <br> интересующему вас вопросу: от обучения <br> до сотрудничества и мы обязательно Вам ответим.
                 <br> Или позвоните на горячую линию +7 999 999 99 91</p>
             </div>
-            <form action="/submit-form" method="POST" class="form">
+            <form method="POST" class="form">
                     <div>
                         <div class="form-group">
                             <input class="text" placeholder="Ваше ФИО">
@@ -116,7 +116,7 @@
                         <div class="form-group2" style="margin-top: 30px;">
                             <input class="text" placeholder="Ваш вопрос">
                         </div>
-                        <button class="buttonBlack" style="margin-top: 30px;">ОТПРАВИТЬ</button>
+                        <button type="button" class="buttonBlack" id="buttonBlack" style="margin-top: 30px;">ОТПРАВИТЬ</button>
                     </div>
                 <form>
         </div>
@@ -173,3 +173,8 @@
         <footer>
 </body>
 <script src="popup_index.js"></script>
+<script>
+    document.getElementById('buttonBlack').addEventListener('click', () => {
+        window.location.reload();
+    })
+</script>
