@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модальные окна</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f4f4f4;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 30px;
+      width: 520px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      position: relative;
+
+      display: flex;
+    }
+
+    .modal .modal-content {
+        max-width: 440px;
+        margin: auto;
+    }
+
+    .modal img {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    .modal h2 {
+      margin: 0 0 25px;
+      font-size: 22px;
+    }
+
+    .modal input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 20px;
+      font-size: 14px;
+      box-sizing: border-box;
+      min-height: 55px;
+      max-height: 55px;
+    }
+
+    .modal a {
+      display: block;
+      text-align: left;
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: #444;
+      text-decoration: underline;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      flex: 1;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .create-btn {
+      margin-right: 10px;
+      border: 1px solid #000;
+      background: #fff;
+    }
+
+    .login-btn {
+      background: #86D430;
+      color: white;
+      border: none;
+    }
+
+    .submit-btn {
+      background: #86D430;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .social-login {
+      font-size: 14px;
+      color: #444;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 15px;
+    }
+
+    .social-icons img {
+      width: 32px;
+      cursor: pointer;
+    }
+
+    .open-btn {
+      padding: 12px 20px;
+      background: #86D430;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .modal .bottom-link {
+      font-size: 13px;
+    }
+
+    .modal .bottom-link a {
+      color: black;
+      text-decoration: underline;
+      margin-left: 4px;
+      text-align: center;
+    }
+
+    h2 {
+        font-family: Kanit Cyrillic;
+    }
+  </style>
+</head>
+<body>
+
+<button class="open-btn">Открыть модальное окно</button>
+
+<!-- Модальное окно входа -->
+<div class="modal-overlay" id="loginOverlay">
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+        <img src="IMG GLAVNAI/logo-active.svg" alt="Bot Icon">
+        <h2>Вход</h2>
+
+        <input type="text" placeholder="Логин">
+        <input type="password" placeholder="Пароль">
+        <a href="#">Не помню пароль</a>
+
+        <div class="buttons">
+        <button class="create-btn" id="toRegister">Создать профиль</button>
+        <button class="login-btn">Войти</button>
+        </div>
+
+        <div class="social-login">войти с помощью</div>
+        <div class="social-icons">
+            <img src="IMG MODAL/vk-icon.svg" alt="VK">
+            <img src="IMG MODAL/tg-icon.svg" alt="Telegram">
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div class="modal-overlay" id="registerOverlay">
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+        <img src="IMG GLAVNAI/logo-active.svg" alt="Bot Icon 2">
+        <h2>Регистрация</h2>
+
+        <input type="email" placeholder="Электронная почта">
+        <input type="text" placeholder="Код из почты">
+        <button class="submit-btn">Далее</button>
+
+        <div class="social-login">ИЛИ</div>
+        <div class="social-icons">
+            <img src="IMG MODAL/vk-icon.svg" alt="VK">
+            <img src="IMG MODAL/tg-icon.svg" alt="Telegram">
+        </div>
+
+        <div class="bottom-link">Уже есть аккаунт? <a href="#" id="backToLogin">Войдите</a></div>
+    </div>
+  </div>
+</div>
+
+<script src="profile_modal.js"></script>
+</body>
+</html>

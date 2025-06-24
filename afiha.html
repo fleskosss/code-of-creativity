@@ -7,8 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
+    <!-- Модальное окно входа -->
+<div class="modal-overlay" id="loginOverlay">
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+        <img src="IMG GLAVNAI/logo-active.svg" alt="Bot Icon">
+        <h2>Вход</h2>
+
+        <input type="text" placeholder="Логин">
+        <input type="password" placeholder="Пароль">
+        <a href="#">Не помню пароль</a>
+
+        <div class="buttons">
+        <button class="create-btn" id="toRegister">Создать профиль</button>
+        <button class="login-btn">Войти</button>
+        </div>
+
+        <div class="social-login">войти с помощью</div>
+        <div class="social-icons">
+            <img src="IMG MODAL/vk-icon.svg" alt="VK">
+            <img src="IMG MODAL/tg-icon.svg" alt="Telegram">
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div class="modal-overlay" id="registerOverlay">
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+        <img src="IMG GLAVNAI/logo-active.svg" alt="Bot Icon 2">
+        <h2>Регистрация</h2>
+
+        <input type="email" placeholder="Электронная почта">
+        <input type="text" placeholder="Код из почты">
+        <button class="submit-btn">Далее</button>
+
+        <div class="social-login">ИЛИ</div>
+        <div class="social-icons">
+            <img src="IMG MODAL/vk-icon.svg" alt="VK">
+            <img src="IMG MODAL/tg-icon.svg" alt="Telegram">
+        </div>
+
+        <div class="bottom-link">Уже есть аккаунт? <a href="#" id="backToLogin">Войдите</a></div>
+    </div>
+  </div>
+</div>
+
     <div class="container">
         <header style="margin-top: 40px;">
                     <nav class="header" id="Header">
@@ -31,7 +79,7 @@
                             <li><a href="#">Курсы</a></li>
                             <li><a href="#">Новости</a></li>
                             <li><a href="kontakti.html">Контакты</a></li>
-                            <li><button id="accountButton"><img src="IMG GLAVNAI/profile-white-icon.svg" class="account-icon"></button></li>
+                            <li><button id="accountButton" class="open-btn"><img src="IMG GLAVNAI/profile-white-icon.svg" class="account-icon"></button></li>
                         </ul>
                     </nav>
                 </header>
@@ -212,6 +260,7 @@
    
 </body>
 <script src="popup_index.js"></script>
+<script src="profile_modal.js"></script>
 <script>
     document.getElementById('fiolGrand').addEventListener('click', () => {
         window.location.reload();
